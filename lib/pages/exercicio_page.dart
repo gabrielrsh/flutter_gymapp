@@ -23,294 +23,70 @@ class ExercicioPage extends StatelessWidget {
       sentindo: "Como estou me sentindo 2",
       data: "2023-07-15",
     ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
-    Sentimento(
-      id: 'S001',
-      sentindo: "Como estou me sentindo",
-      data: "2023-07-13",
-    ),
-    Sentimento(
-      id: 'S002',
-      sentindo: "Como estou me sentindo 2",
-      data: "2023-07-15",
-    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: Text("${exercicio.nome} - ${exercicio.treino}"),
+          title: Column(
+            children: [
+              Text(
+                exercicio.nome,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                ),
+              ),
+              Text(
+                exercicio.treino,
+                style: const TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          centerTitle: true,
+          backgroundColor: const Color(0xFF0A6D92),
+          elevation: 0,
+          toolbarHeight: 72,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(20),
+            ),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: const Icon(Icons.add),
         ),
-        body: Padding(
+        body: Container(
+          margin: const EdgeInsets.all(8),
           padding: const EdgeInsets.all(16.0),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+          ),
           child: ListView(
             children: [
-              ElevatedButton(
-                  onPressed: () {}, child: const Text("Enviar Foto")),
+              SizedBox(
+                height: 250,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text("Enviar Foto"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text("Tirar Foto"),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 8,
+              ),
               const Text(
                 "Como fazer?",
                 style: TextStyle(
@@ -318,8 +94,16 @@ class ExercicioPage extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
+              const SizedBox(
+                height: 8,
+              ),
               Text(exercicio.comoFazer),
-              const Divider(),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
               const Text(
                 "Como estou me sentindo?",
                 style: TextStyle(
@@ -327,11 +111,25 @@ class ExercicioPage extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
+              const SizedBox(
+                height: 8,
+              ),
               Column(
-                crossAxisAlignment:   CrossAxisAlignment.start,
-                children: List.generate(listaSentimentos.length, (index){
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: List.generate(listaSentimentos.length, (index) {
                   Sentimento sentimentoAgora = listaSentimentos[index];
-                  return Text(sentimentoAgora.sentindo);
+                  return ListTile(
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                    title: Text(sentimentoAgora.sentindo),
+                    subtitle: Text(sentimentoAgora.data),
+                    leading: const Icon(Icons.double_arrow),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.delete),
+                      color: Colors.red,
+                      onPressed: () => {},
+                    ),
+                  );
                 }),
               )
             ],
