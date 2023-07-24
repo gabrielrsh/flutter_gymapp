@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gymapp/_core/minhas_cores.dart';
 import 'package:flutter_gymapp/models/exercicio.dart';
 import 'package:flutter_gymapp/models/sentimento.dart';
 
@@ -46,12 +47,12 @@ class ExercicioPage extends StatelessWidget {
             ],
           ),
           centerTitle: true,
-          backgroundColor: const Color(0xFF0A6D92),
+          backgroundColor: MinhasCores.azulEscuro,
           elevation: 0,
           toolbarHeight: 72,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(20),
+              bottom: Radius.circular(32),
             ),
           ),
         ),
