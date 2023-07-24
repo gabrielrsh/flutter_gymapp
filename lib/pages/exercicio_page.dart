@@ -1,13 +1,305 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gymapp/models/exercicio.dart';
+import 'package:flutter_gymapp/models/sentimento.dart';
 
 class ExercicioPage extends StatelessWidget {
-  const ExercicioPage({super.key});
+  ExercicioPage({super.key});
+
+  final Exercicio exercicio = Exercicio(
+    id: 'Ex001',
+    nome: "Nome do Treino",
+    treino: "Treino A",
+    comoFazer: "Como fazer o treino",
+  );
+
+  final List<Sentimento> listaSentimentos = [
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+    Sentimento(
+      id: 'S001',
+      sentindo: "Como estou me sentindo",
+      data: "2023-07-13",
+    ),
+    Sentimento(
+      id: 'S002',
+      sentindo: "Como estou me sentindo 2",
+      data: "2023-07-15",
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Exercicio 1 - Treino A'),
+          title: Text("${exercicio.nome} - ${exercicio.treino}"),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
@@ -15,8 +307,7 @@ class ExercicioPage extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
             children: [
               ElevatedButton(
                   onPressed: () {}, child: const Text("Enviar Foto")),
@@ -27,7 +318,7 @@ class ExercicioPage extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              const Text("Explicação de como fazer o exercicio"),
+              Text(exercicio.comoFazer),
               const Divider(),
               const Text(
                 "Como estou me sentindo?",
@@ -36,7 +327,13 @@ class ExercicioPage extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              const Text("Explicação de como estou me sentindo"),
+              Column(
+                crossAxisAlignment:   CrossAxisAlignment.start,
+                children: List.generate(listaSentimentos.length, (index){
+                  Sentimento sentimentoAgora = listaSentimentos[index];
+                  return Text(sentimentoAgora.sentindo);
+                }),
+              )
             ],
           ),
         ));
