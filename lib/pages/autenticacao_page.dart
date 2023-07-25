@@ -11,6 +11,7 @@ class AutenticacaoPage extends StatefulWidget {
 
 class _AutenticacaoPageState extends State<AutenticacaoPage> {
   bool queroEntrar = true;
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +34,7 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Form(
+              key: _formKey,
               child: Center(
                 child: SingleChildScrollView(
                   child: Column(
@@ -57,24 +59,71 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                       ),
                       TextFormField(
                         decoration: getAuthenticationInputDecoration("E-mail"),
+                        validator: (String? value) {
+                          if (value == null) {
+                            return "O e-mail não pode ser vazio";
+                          }
+                          if (value.length < 5) {
+                            return "O e-mail é muito curto";
+                          }
+                          if (!value.contains('@')) {
+                            return "O e-mail é inválido";
+                          }
+                          return null;
+                        },
                       ),
-                      const SizedBox(height: 8,),
+                      const SizedBox(
+                        height: 8,
+                      ),
                       TextFormField(
                         decoration: getAuthenticationInputDecoration("Senha"),
                         obscureText: true,
+                        validator: (String? value) {
+                          if (value == null) {
+                            return "O senha não pode ser vazia";
+                          }
+                          if (value.length < 5) {
+                            return "O senha é muito curta";
+                          }
+                          return null;
+                        },
                       ),
-                      const SizedBox(height: 8,),
+                      const SizedBox(
+                        height: 8,
+                      ),
                       Visibility(
                         visible: !queroEntrar,
                         child: Column(
                           children: [
                             TextFormField(
-                              decoration: getAuthenticationInputDecoration("Confirme a Senha"),
+                              decoration: getAuthenticationInputDecoration(
+                                  "Confirme a Senha"),
                               obscureText: true,
+                              validator: (String? value) {
+                                if (value == null) {
+                                  return "O confirmação de senha não pode ser vazia";
+                                }
+                                if (value.length < 5) {
+                                  return "O confirmação de senha é muito curta";
+                                }
+                                return null;
+                              },
                             ),
-                            const SizedBox(height: 8,),
+                            const SizedBox(
+                              height: 8,
+                            ),
                             TextFormField(
-                              decoration: getAuthenticationInputDecoration("Nome"),
+                              decoration:
+                                  getAuthenticationInputDecoration("Nome"),
+                              validator: (String? value) {
+                                if (value == null) {
+                                  return "O nome não pode ser vazio";
+                                }
+                                if (value.length < 5) {
+                                  return "O nome é muito curto";
+                                }
+                                return null;
+                              },
                             ),
                           ],
                         ),
@@ -83,7 +132,9 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                         height: 16,
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          botaoPrincipalClicado();
+                        },
                         child: Text((queroEntrar) ? "Entrar" : "Cadastrar"),
                       ),
                       const Divider(),
@@ -106,5 +157,13 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
         ],
       ),
     );
+  }
+
+  botaoPrincipalClicado() {
+    if (_formKey.currentState!.validate()) {
+      print("Form válido");
+    } else {
+      print("Form inválido");
+    }
   }
 }
