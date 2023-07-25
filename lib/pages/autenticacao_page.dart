@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gymapp/_core/minhas_cores.dart';
+import 'package:flutter_gymapp/components/decoracao_campo_autenticacao.dart';
 
 class AutenticacaoPage extends StatefulWidget {
   const AutenticacaoPage({super.key});
@@ -55,30 +56,25 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                         height: 32,
                       ),
                       TextFormField(
-                        decoration: const InputDecoration(
-                          label: Text("E-mail"),
-                        ),
+                        decoration: getAuthenticationInputDecoration("E-mail"),
                       ),
+                      const SizedBox(height: 8,),
                       TextFormField(
-                        decoration: const InputDecoration(
-                          label: Text("Senha"),
-                        ),
+                        decoration: getAuthenticationInputDecoration("Senha"),
                         obscureText: true,
                       ),
+                      const SizedBox(height: 8,),
                       Visibility(
                         visible: !queroEntrar,
                         child: Column(
                           children: [
                             TextFormField(
-                              decoration: const InputDecoration(
-                                label: Text("Confirme Senha"),
-                              ),
+                              decoration: getAuthenticationInputDecoration("Confirme a Senha"),
                               obscureText: true,
                             ),
+                            const SizedBox(height: 8,),
                             TextFormField(
-                              decoration: const InputDecoration(
-                                label: Text("Nome"),
-                              ),
+                              decoration: getAuthenticationInputDecoration("Nome"),
                             ),
                           ],
                         ),
