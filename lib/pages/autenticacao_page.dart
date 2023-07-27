@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gymapp/_core/minhas_cores.dart';
 import 'package:flutter_gymapp/components/decoracao_campo_autenticacao.dart';
+import 'package:flutter_gymapp/services/autenticacao_service.dart';
 
 class AutenticacaoPage extends StatefulWidget {
   const AutenticacaoPage({super.key});
@@ -12,6 +13,12 @@ class AutenticacaoPage extends StatefulWidget {
 class _AutenticacaoPageState extends State<AutenticacaoPage> {
   bool queroEntrar = true;
   final _formKey = GlobalKey<FormState>();
+
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _senhaController = TextEditingController();
+  final TextEditingController _nomeController = TextEditingController();
+
+  final AutenticacaoService _autencacaoService = AutenticacaoService();
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +65,7 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                         height: 32,
                       ),
                       TextFormField(
+                        controller: _emailController,
                         decoration: getAuthenticationInputDecoration("E-mail"),
                         validator: (String? value) {
                           if (value == null) {
@@ -76,6 +84,7 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                         height: 8,
                       ),
                       TextFormField(
+                        controller: _senhaController,
                         decoration: getAuthenticationInputDecoration("Senha"),
                         obscureText: true,
                         validator: (String? value) {
@@ -113,6 +122,7 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
                               height: 8,
                             ),
                             TextFormField(
+                              controller: _nomeController,
                               decoration:
                                   getAuthenticationInputDecoration("Nome"),
                               validator: (String? value) {
@@ -160,8 +170,18 @@ class _AutenticacaoPageState extends State<AutenticacaoPage> {
   }
 
   botaoPrincipalClicado() {
+    String email = _emailController.text;
+    String senha = _senhaController.text;
+    String nome = _nomeController.text;
+
     if (_formKey.currentState!.validate()) {
-      print("Form válido");
+      if(queroEntrar){
+        print("Entrada validada");
+      }
+      else {
+        print("Cadastro validado");
+        _autencacaoService.cadastrarUsuario(email: email, senha: senha, nome: nome);
+      }
     } else {
       print("Form inválido");
     }
